@@ -1,84 +1,57 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climate Change Awareness</title>
-    <style>
-        /* Add your CSS styles here */
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <img src="https://www.shutterstock.com/image-vector/sun-rays-falling-deep-into-600nw-1721181988.jpg" alt="default ">
     <div class="container">
         <section class="section">
-            <h1>Welcome to Climate Change Awareness</h1>
+            <h1>Empower Change with Green Investments</h1>
             <div class="info-box">
-                <p>Climate change is one of the most pressing issues of our time. It refers to long-term shifts in temperatures and weather patterns across the world. These changes have significant impacts on ecosystems, economies, and human health.</p>
-                <p>By raising awareness about climate change and taking action to reduce our carbon footprint, we can work towards a more sustainable future for generations to come.</p>
+                <p>Investing green today for a sustainable tomorrow. Together, let's shape a cleaner, healthier planet for generations to come.</p>
+            
             </div>
         </section>
         
-        <section class="section">
-            <h2>Login / Signup</h2>
-            <form class="form">
-                <input type="text" placeholder="Username" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Login</button>
-                <p>Don't have an account? <a href="#">Signup</a></p>
-            </form>
-        </section>
-
-        <section class="section">
-            <h2>Carbon Footprint Calculator</h2>
-            <form id="carbon-form">
-                <label for="electricity-usage">Electricity Usage (kWh/year):</label>
-                <input type="number" id="electricity-usage" required><br>
-                <label for="transportation">Transportation (miles/year):</label>
-                <input type="number" id="transportation" required><br>
-                <label for="waste-generation">Waste Generation (lbs/year):</label>
-                <input type="number" id="waste-generation" required><br>
-                <button type="button" onclick="calculateCarbonFootprint()">Calculate</button>
-            </form>
-            <div id="carbon-result"></div>
-        </section>
-
-        <section class="section">
-            <h2>ESG Investment Companies Search</h2>
-            <form id="esg-form">
-                <input type="text" placeholder="Search ESG Investment Companies">
-                <button type="submit">Search</button>
-            </form>
-            <div id="esg-result"></div>
-        </section>
-    </div>
-
-    <script>
-        // JavaScript functions for calculating carbon footprint and ESG score will go here
-        function calculateCarbonFootprint() {
-            // Get input values
-            var electricityUsage = parseFloat(document.getElementById('electricity-usage').value);
-            var transportation = parseFloat(document.getElementById('transportation').value);
-            var wasteGeneration = parseFloat(document.getElementById('waste-generation').value);
-
-            // Constants for carbon footprint calculation (hypothetical values)
-            var electricityFactor = 0.5; // kg CO2 equivalent per kWh
-            var transportationFactor = 0.2; // kg CO2 equivalent per mile
-            var wasteFactor = 0.1; // kg CO2 equivalent per pound
-
-            // Calculate carbon footprint
-            var electricityFootprint = electricityUsage * electricityFactor;
-            var transportationFootprint = transportation * transportationFactor;
-            var wasteFootprint = wasteGeneration * wasteFactor;
-            var totalFootprint = electricityFootprint + transportationFootprint + wasteFootprint;
-
-            // Display result
-            var resultDiv = document.getElementById('carbon-result');
-            resultDiv.innerHTML = "<h3>Carbon Footprint:</h3>" +
-                                   "<p>Electricity: " + electricityFootprint.toFixed(2) + " kg CO2 equivalent</p>" +
-                                   "<p>Transportation: " + transportationFootprint.toFixed(2) + " kg CO2 equivalent</p>" +
-                                   "<p>Waste: " + wasteFootprint.toFixed(2) + " kg CO2 equivalent</p>" +
-                                   "<p><strong>Total: " + totalFootprint.toFixed(2) + " kg CO2 equivalent</strong></p>";
-        }
-    </script>
+      
 </body>
 </html>
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Climate Change Awareness</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <div class="background-image">
+         <img src="https://www.shutterstock.com/image-vector/sun-rays-falling-deep-into-600nw-1721181988.jpg" alt="default">
+     </div>
+     <div class="container">
+         <section class="section">
+             <h1>Empower Change with Green Investments</h1>
+             <div class="info-box">
+                 <p>Investing green today for a sustainable tomorrow. Together, let's shape a cleaner, healthier planet for generations to come.</p>
+             </div>
+         </section>
+     </div>
+
+   
+   <script>
+    document.addEventListener('click', function() {
+        window.location.href = "login.html"; // Redirect to the login page
+    });
+   </script> 
+
+
+ </body>
+ </html>
+ 
+
