@@ -15,8 +15,11 @@ header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+   
 }
-
+header:hover{
+     text-shadow: 0 0 10px rgb(235, 190, 197);
+}
 header .container {
     display: flex;
     justify-content: space-between;
@@ -38,6 +41,7 @@ header h1 {
 .logout:hover {
     background-color: #fff;
     color: #333;
+    box-shadow:0 0 10px pink;
 }
 
 main {
@@ -66,15 +70,6 @@ footer .container {
 
 
 
-/* 
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-} */
 
 h1 {
     text-align: center;
@@ -82,6 +77,7 @@ h1 {
 
 form {
     margin-bottom: 20px;
+    border: 0 0 10px red;
 }
 
 label {
