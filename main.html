@@ -9,19 +9,32 @@
 <body>
     <header>
         <div class="container">
-            <h1>Investment Dashboard</h1>
+            <h1>carbon foot print</h1>
             <a href="home.html" class="logout">Logout</a>
         </div>
     </header>
     <main>
+       
         <div class="container">
-            <h2>Fossil Free Funds</h2>
-            <p>Fossil fuel holdings: <span id="fossil-holdings">0</span></p>
-            <h2>Deforestation Free Funds</h2>
-            <p>Deforestation-risk producer count: <span id="deforestation-count">0</span></p>
-            <h2>Gender Equality Funds</h2>
-            <p>Gender equality score: <span id="gender-score">0</span>/100</p>
+            <h1>Carbon Footprint Detector</h1>
+            <form id="carbon-form">
+                <label for="fossil-fuel-holdings">Fossil Fuel Holdings Count:</label>
+                <input type="number" id="fossil-fuel-holdings" name="fossil-fuel-holdings" required>
+                
+                <label for="deforestation-risk">Deforestation Risk Producer Count:</label>
+                <input type="number" id="deforestation-risk" name="deforestation-risk" required>
+                
+                <label for="gender-equality-score">Gender Equality Score:</label>
+                <input type="number" id="gender-equality-score" name="gender-equality-score" min="0" max="100" required>
+                
+                <button type="submit">Detect Carbon Footprint</button>
+            </form>
+            <div id="result"></div>
         </div>
+    
+        <script src="script.js"></script>
+     
+
     </main>
     <footer>
         <div class="container">
