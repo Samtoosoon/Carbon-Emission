@@ -15,8 +15,11 @@ header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
+   
 }
-
+header:hover{
+     text-shadow: 0 0 10px rgb(235, 190, 197);
+}
 header .container {
     display: flex;
     justify-content: space-between;
@@ -38,6 +41,7 @@ header h1 {
 .logout:hover {
     background-color: #fff;
     color: #333;
+    box-shadow:0 0 10px pink;
 }
 
 main {
@@ -62,4 +66,46 @@ footer {
 
 footer .container {
     padding: 0;
+}
+
+
+
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+    border: 0 0 10px red;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    font-weight: bold;
 }
