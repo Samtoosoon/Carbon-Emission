@@ -44,7 +44,7 @@ This repository contains code and resources for building a regression model to p
 ## 📊 Model Evaluation
 The model's performance is evaluated using metrics such as Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared (R2) score on a test dataset. Continuous improvement and fine-tuning of the model parameters are encouraged to achieve better predictions.
 
-## 🙌 Contributions
-Contributions to this project are welcome! If you have ideas for enhancements, bug fixes, or new features, please fork the repository and submit a pull request.
 
+## 🙌 Presentation
+https://drive.google.com/drive/folders/1Tyq_CX2IyPlFlv8G7KXc6-ooMPqvQzE4?usp=sharing
 
