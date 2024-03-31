@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="syle.css">
+    <title>Login</title>
+</head>
+<body>
+    <canvas id="background-animation"></canvas>
+   
+    <div class="container">
+        <form id="signin-form">
+            <h2>Sign In</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="button" id="submit" class="sub">Submit</button>
+            <p>Don't have an account? <a href="login.html">Register here</a></p>
+        </form>
+    </div>
+
+    <script type="module" >
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"; 
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js"; 
+    
+    const firebaseConfig = {
+        apiKey: "AIzaSyBiIrPpQJpay-02Lm0pzNXHm4zxwCXA2hU",
+        authDomain: "loginsignup-page-541c1.firebaseapp.com",
+        projectId: "loginsignup-page-541c1",
+        storageBucket: "loginsignup-page-541c1.appspot.com",
+        messagingSenderId: "842148234758",
+        appId: "1:842148234758:web:72acfc5167dff0aa86a587",
+        measurementId: "G-EK1HL13TWT"
+    };
+    // ok 
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
+    
+    function validate_password (password){
+        if(password<6){
+            return false
+        }
+        else {
+             return true 
+        }
+    }
+    
+    document.getElementById("submit").addEventListener('click', function(e) {
+        e.preventDefault();
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+    
+    set(ref(db, 'users/' + username), {
+            username: username,
+            password: password
+        }).then(() => {
+            alert("Login successful!");
+            // Redirect to the profile page
+            window.location.href = "main.html"; // Change to the actual profile page URL
+        }).catch((error) => {
+            console.error("Error adding document: ", error);
+        });
+        });
+
+        // here 
+    </script> 
+
+</body>
+</html>
+
+
