@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 # Loading the saved model
-loaded_model = pickle.load(open('Recent/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('C:/Users/hp/Desktop/Recent', 'rb'))
 
 # Creating a function to predict the carbon emission
 def predict_emission(input_data):
