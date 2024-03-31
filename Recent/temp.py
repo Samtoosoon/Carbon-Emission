@@ -48,7 +48,7 @@ def main():
         input_data = np.array([Relative_carbon_intensity, Total_financed_emissions_scope_1_2, Total_financed_emissions_scope_1_2_3, Carbon_footprint_portfolio_coverage_by_market_value_weight, Carbon_footprint_portfolio_coverage_by_number_of_disclosing_titles, Fossil_fuel_holdings_count, Fossil_fuel_holdings_weight, Deforestation_risk_producer_count, Deforestation_risk_producer_weight, Fund_net_assets, Percent_rated])
         
         prediction = predict_emission(input_data)
-        Outcome = f'Predicted Emission: {prediction[0]}'
+        Outcome = f'Predicted Emission: {prediction[0]:.2f} tons CO2e'
         st.success(Outcome)
 
 if __name__ == '__main__':
